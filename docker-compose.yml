@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      args: []
+    container_name: imoveis-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
